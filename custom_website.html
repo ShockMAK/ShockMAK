@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+            text-align: center;
+        }
+        .top-bar {
+            background-color: #007bb5; /* Darker blue for top bar */
+            padding: 10px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+        }
+        .top-bar img {
+            width: 30px;
+            height: 30px;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .content img {
+            width: 300px; /* Adjust size as needed */
+            height: auto;
+        }
+        .button-container {
+            margin: 20px 0;
+        }
+        .button-container button {
+            width: 200px; /* Button width */
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            background-color: #0288d1; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            background-color: #0277bd; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="https://www.youtube.com/channel/UCF69p87tyNtGLBp2fDKUa8A" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Icon">
+        </a>
+    </div>
+    <div class="content">
+        <img src="https://drive.google.com/uc?export=view&id=1NqDxcbYuKtiMbll_S8hK2nCre8s4AM6x" alt="Centered Image">
+        <div class="button-container">
+            <button onclick="revealIP()">Minecraft Server</button>
+            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=14mN__WTRhKCQoc5My1Gg21vbqVOozqdj'">Custom Resource Pack</button>
+            <button onclick="window.location.href='https://drive.google.com/uc?export=download&id=1vdprpFrAzDR0tKa52C0XcjetDusJ8TpK'">Chrome Extension</button>
+        </div>
+        <div id="server-ip" style="display: none; margin-top: 10px;">IP: shockamkmegasmp.aternos.me</div>
+    </div>
+
+    <script>
+        function revealIP() {
+            var ipElement = document.getElementById('server-ip');
+            if (ipElement.style.display === 'none') {
+                ipElement.style.display = 'block';
+            } else {
+                ipElement.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
