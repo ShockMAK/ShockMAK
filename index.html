@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOCK MAK</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            color: white;
+        }
+        .top-bar {
+            width: 100%;
+            background-color: #202020;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+        }
+        .top-bar img {
+            width: 30px;
+            margin-right: 10px;
+        }
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .content img {
+            width: 150px;
+        }
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 12px;
+            width: 200px;
+        }
+        .button a {
+            color: white;
+            text-decoration: none;
+        }
+        .hidden-text {
+            display: none;
+            margin-top: 10px;
+            color: #4CAF50;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="https://www.youtube.com/channel/UCF69p87tyNtGLBp2fDKUa8A" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+        </a>
+    </div>
+    <div class="content">
+        <img src="https://drive.google.com/uc?id=1NqDxcbYuKtiMbll_S8hK2nCre8s4AM6x" alt="SHOCK MAK">
+        <div>
+            <button class="button" onclick="document.getElementById('server-ip').style.display='block'">Minecraft Server</button>
+            <div id="server-ip" class="hidden-text">shockamkmegasmp.aternos.me</div>
+        </div>
+        <div>
+            <button class="button"><a href="https://drive.google.com/file/d/14mN__WTRhKCQoc5My1Gg21vbqVOozqdj/view?usp=sharing" download>Custom Resource Pack</a></button>
+        </div>
+        <div>
+            <button class="button"><a href="https://drive.google.com/file/d/1vdprpFrAzDR0tKa52C0XcjetDusJ8TpK/view?usp=sharing" download>Chrome Extension</a></button>
+        </div>
+    </div>
+</body>
+</html>
